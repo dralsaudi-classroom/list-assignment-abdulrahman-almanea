@@ -19,9 +19,9 @@ public class ListTester {
     }
     public static <T> void reverseCopy(DLL<T> l1, DLL<T> l2)
     {
-       l1.findFirst();
     	if (l1.retrieve() == null) return;
-    	
+    	       l1.findFirst();
+
     	while(!l1.last()) {
     		l1.findNext();
     	}
