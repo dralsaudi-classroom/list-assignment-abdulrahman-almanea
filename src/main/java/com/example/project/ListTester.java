@@ -11,6 +11,7 @@ public class ListTester {
     	        list.insert(temp);
     		 	list.findFirst();
     	        list.remove();
+             list.findFirst();
     	    }
     }
     public static <T> void reverseCopy(DLL<T> l1, DLL<T> l2)
