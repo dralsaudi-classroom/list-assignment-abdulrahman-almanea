@@ -80,14 +80,9 @@ public class DLL<T> {
             current = current.next;
         }
         if (node1 == null || node2 == null) return;
-        current = node1.next;
-        while (current != node2) {
-        	DLLNode<T> next = current.next;
-            current.previous.next = current.next;
-            if (current.next != null) {
-                current.next.previous = current.previous;
-            }
-            current = next;
+         current = node1;
+        current.next = node2;
+        node2.previous = current;
         }
 	    findFirst();
     }
