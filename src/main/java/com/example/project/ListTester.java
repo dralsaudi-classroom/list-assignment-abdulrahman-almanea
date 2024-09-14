@@ -8,6 +8,7 @@ public class ListTester {
     	 for (int i = 0; i < n; i++) {
     		 	list.findFirst();
     	        list.insert(list.retrieve());
+                list.findFirst();
     	        list.remove();
     	    }
     }
