@@ -6,9 +6,10 @@ public class ListTester {
       
     	 if ( list.empty() || n < 1) return;
     	 for (int i = 0; i < n; i++) {
+    		  list.findFirst();
+    		 	T temp =list.retrieve() ;
+    	        list.insert(temp);
     		 	list.findFirst();
-    	        list.insert(list.retrieve());
-                list.findFirst();
     	        list.remove();
     	    }
     }
