@@ -19,7 +19,7 @@ public class ListTester {
     }
     public static <T> void reverseCopy(DLL<T> l1, DLL<T> l2)
     {
-    	if (l1.retrieve() == null) return;
+    	if (l1.empty()) return;
     	       l1.findFirst();
 
     	while(!l1.last()) {
