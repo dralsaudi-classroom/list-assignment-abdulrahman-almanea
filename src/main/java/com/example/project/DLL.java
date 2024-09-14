@@ -83,7 +83,7 @@ public class DLL<T> {
          current = node1;
         current.next = node2;
         node2.previous = current;
-        }
+        
 	    findFirst();
     }
 }
