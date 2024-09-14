@@ -79,7 +79,9 @@ public class DLL<T> {
             }
             current = current.next;
         }
-        if (node1 == null || node2 == null) return;
+        if (node1 == null || node2 == null){
+		findFirst();
+		return;}
          current = node1;
         current.next = node2;
         node2.previous = current;
