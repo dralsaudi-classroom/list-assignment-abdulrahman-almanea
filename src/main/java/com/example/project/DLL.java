@@ -65,8 +65,9 @@ public class DLL<T> {
             current = current.next;
     }
     public void removeBetween(T e1, T e2) {
+	    
     	 if (head == null) return;
-    	 current=head;
+    	findFirst();
         DLLNode<T> node1 = null;
         DLLNode<T> node2 = null;
         while (current != null) {
@@ -88,5 +89,6 @@ public class DLL<T> {
             }
             current = next;
         }
+	    findFirst();
     }
 }
